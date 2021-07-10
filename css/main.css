@@ -1,0 +1,184 @@
+body {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-page-link {
+    display: none;
+}
+
+.login {
+    height: 10rem;
+    width: 30rem;
+    background: red;
+    margin-top: 35vh;
+    /* align-self: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: center;
+    margin-top: 0.3rem;
+    color: whitesmoke;
+}
+
+input {
+    margin-top: 0.5rem;
+}
+
+input[type="text"]::placeholder {
+    text-align: center;
+}
+
+input[type="password"]::placeholder {
+    text-align: center;
+}
+
+input[type="submit"] {
+    overflow: hidden;
+    background-color: mintcream;
+    width: 3rem;
+    align-self: center;
+    margin-top: 0.5rem;
+}
+
+.secret-content {
+    display: none;
+    margin-top: 28vh;
+}
+
+button {
+    display: none;
+}
+
+select {
+    margin-top: 2rem;
+}
+
+table {
+    background-color: whitesmoke;
+    margin-top: 1rem;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 0.1rem solid black;
+    padding: 0.3rem;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    width: 14.3rem;
+}
+
+.btn-sortby-table, .btn-sortby-cards {
+    display: block;
+    overflow: hidden;
+    border: 0.1rem solid rgb(79, 105, 219);
+    margin-top: 1rem;
+    background-color: white;
+}
+
+.btn-sortby-table:hover > .fas {
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sortby-table:hover {
+    background-color: rgb(79, 105, 219);
+    cursor: pointer;
+}
+
+.btn-sortby-cards:hover > .fas {
+    color:  white;
+    cursor: pointer;
+}
+
+.btn-sortby-cards:hover {
+    background-color: rgb(79, 105, 219);
+    cursor: pointer;
+}
+
+.btn-sortby-active {
+    display: block;
+    overflow: hidden;
+    border: 0.1rem solid rgb(79, 105, 219);
+    margin-top: 1rem;
+    background-color: rgb(79, 105, 219);
+}
+
+.btn-sortby-active:hover {
+    cursor: pointer;
+}
+
+.inactive {
+    color: rgb(79, 105, 219);
+}
+
+.fas-active {
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    margin: auto 1rem;
+}
+
+
+p {
+    align-self: center;
+    display: block;
+}
+
+.card-img {
+    /* margin-top: 2rem; */
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.white {
+    background-color: white;
+}
+
+.fas {
+    margin-top: 0.3rem;
+}
+
+.fa-user-tie {
+    color: black;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Admin</title>
+</head>
+<body onload="onToAdminPage()">
+    <h1>Admin's Page</h1>
+    <a href="index.html">Back</a>
+    <select onchange="onSortChange(this.value)">
+        <option value="name">Name</option>
+        <option value="lastLoginDate">Last login</option>
+    </select>
+    <div class="btns">
+        <button class="btn-sortby-cards" onclick="onClickShowCards(event)"><i class="fas fa-th fa-lg inactive"></i></button>
+        <button class="btn-sortby-table table-show" onclick="onClickShowTable(event)"><i class="fas fa-bars fa-lg inactive"></i></button>
+
+    </div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Last login</th>
+        </tr>
+        <tr class="registered-users"> 
+        </tr>
+    </table>
+    <div class="cards">
+    </div>
+    <script src="js/storage-service.js"></script>
+    <script src="js/user-service.js"></script>
+    <script src="js/user-controller.js"></script>
+</body>
+</html>
